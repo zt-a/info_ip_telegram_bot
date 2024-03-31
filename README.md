@@ -19,7 +19,7 @@ Info IP Telegram Bot - это Telegram бот, который предостав
 1. Клонируйте репозиторий:
 
     ```bash
-    git clone https://github.com/your_username/info_ip_telegram_bot.git
+    git clone https://github.com/zt-a/info_ip_telegram_bot.git
     ```
 
 2. Установите зависимости:
