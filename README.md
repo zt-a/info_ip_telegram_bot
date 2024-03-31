@@ -14,6 +14,8 @@ Info IP Telegram Bot - это Telegram бот, который предостав
 
 ## Установка и запуск
 
+### Установка
+
 1. Клонируйте репозиторий:
 
     ```bash
@@ -26,29 +28,31 @@ Info IP Telegram Bot - это Telegram бот, который предостав
     pip install -r requirements.txt
     ```
 
-3. Внесите необходимые изменения в файл `config.py`, указав токен вашего бота.
+3. Создать файл .env и внести необходимые изменения указав токен вашего бота на переменную **BOT_TOKEN**
+
+### Запуск 
 
 4. **Создайте файл службы для systemd (Linux)**:
 
-    Скопируйте файл службы в системный каталог:
+    4.1. Скопируйте файл службы в системный каталог:
 
     ```bash
     sudo cp /home/ubuntu/info_ip_telegram_bot/info_ip_tg_bot.service /etc/systemd/system/
     ```
 
-    Обновите конфигурацию systemd:
+    4.2. Обновите конфигурацию systemd:
 
     ```bash
     sudo systemctl daemon-reload
     ```
 
-    Включите службу:
+    4.3 Включите службу:
 
     ```bash
     sudo systemctl enable info_ip_tg_bot.service
     ```
 
-    Запустите службу:
+    4.5. Запустите службу:
 
     ```bash
     sudo systemctl start info_ip_tg_bot.service
